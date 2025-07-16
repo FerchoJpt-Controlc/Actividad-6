@@ -1,30 +1,30 @@
 inventario={}
 
-cantidad=int(input("Ingrese la cantidad de productos: "))
+cantidad=int(input("\nIngrese la cantidad de productos: "))
 
 for i in range(cantidad):
     print(f"\nProducto #{i+1}")
 
     while True:
-        codigo=input("Ingrese el codigo del producto: ")
+        codigo=input("\nIngrese el codigo del producto: ")
         if codigo in inventario:
             print("codigo ya existente")
         else:
             break
 
-    nombre=input("Ingrese el nombre del producto: ")
+    nombre=input("\nIngrese el nombre del producto: ")
 
-    categoria=input("Ingrese(Hombre,mujer,niño)")
+    categoria=input("\nIngrese (Hombre,mujer,niño): ")
 
     while True:
-        talla=input("Ingrese la tallea: ")
+        talla=input("\nIngrese la tallea (S,M,L,XL): ")
         if talla in ["S", "M", "L", "XL"]:
             break
         else:
             print("Talla no existente")
 
     while True:
-        precio=float(input("Ingrese el precio del producto: "))
+        precio=float(input("\nIngrese el precio del producto: "))
 
         if precio>0:
             break
@@ -32,7 +32,7 @@ for i in range(cantidad):
             print("El precoo deve ser mayor a 0")
 
     while True:
-        Enstok=int(input("Ingrese la cantidad en stok del producto: "))
+        Enstok=int(input("\nIngrese la cantidad en stock del producto: "))
 
         if Enstok>=0:
             break
