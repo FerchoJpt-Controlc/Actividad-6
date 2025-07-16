@@ -31,4 +31,27 @@ for i in range(cantidad):
         else:
             print("El precoo deve ser mayor a 0")
 
+    while True:
+        Enstok=int(input("Ingrese la cantidad en stok del producto: "))
 
+        if Enstok>=0:
+            break
+        else:
+            print("La cantidad bede ser positiva")
+
+    inventario[codigo]={
+        "nombre":nombre,
+        "categoria":categoria,
+        "precio":precio,
+        "Enstok":Enstok,
+        "Talla":talla,
+    }
+
+print("\nInventario registrado")
+for codigo in inventario:
+    print(f"\nProducto #{codigo}")
+    print(f"Nombre: {inventario[codigo]['nombre']}")
+    print(f"Categoria: {inventario[codigo]['categoria']}")
+    print(f"Precio: {inventario[codigo]['precio']}")
+    print(f"Enstok: {inventario[codigo]['Enstok']}")
+    print(f"Talla: {inventario[codigo]['Talla']}")
