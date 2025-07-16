@@ -23,4 +23,12 @@ for i in range(cantidad):
         else:
             print("Talla no existente")
 
+    while True:
+        precio=float(input("Ingrese el precio del producto: "))
+
+        if precio>0:
+            break
+        else:
+            print("El precoo deve ser mayor a 0")
+
 
